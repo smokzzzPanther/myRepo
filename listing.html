@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | DreamHomes</title>
+  <link rel="stylesheet" href="listing.css">
+</head>
+<body>
+  <header>
+    <h1>dreamhomes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#listings">Listings</a>
+      <a href="index.html#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <a href="index.html#listings" class="back-btn">← Back to Listings</a>
+
+    <div class="property-selector">
+      <div class="property-tabs">
+        <button class="property-tab active" onclick="showProperty(1)">Luxury Apartment</button>
+        <button class="property-tab" onclick="showProperty(2)">Modern Villa</button>
+        <button class="property-tab" onclick="showProperty(3)">Affordable Flat</button>
+      </div>
+    </div>
+
+    <!-- Property 1: Luxury Apartment -->
+    <div id="property-1" class="property-detail">
+      <img src="https://imgs.search.brave.com/Yngr1GXk-gSFC-SRHFKgB0TB5mnNwkisPSEL9em4nTk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzU2/OTcwNy5qcGc" alt="Luxury Apartment" class="property-image">
+      
+      <div class="property-content">
+        <div class="property-header">
+          <h1 class="property-title">Luxury Apartment</h1>
+          <p class="property-location">Bandra West, Mumbai</p>
+          <div class="price-tag">₹80 Lakhs</div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🛏️</div>
+            <div class="feature-label">Bedrooms</div>
+            <div class="feature-value">2 BHK</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚿</div>
+            <div class="feature-label">Bathrooms</div>
+            <div class="feature-value">2</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <div class="feature-label">Size</div>
+            <div class="feature-value">1,200 sq ft</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏢</div>
+            <div class="feature-label">Floor</div>
+            <div class="feature-value">12th of 18</div>
+          </div>
+        </div>
+
+        <div class="amenities">
+          <h3>Key Amenities</h3>
+          <div class="amenities-list">
+            <div class="amenity-item">Swimming Pool</div>
+            <div class="amenity-item">Gym & Fitness Center</div>
+            <div class="amenity-item">24/7 Security</div>
+            <div class="amenity-item">Covered Parking</div>
+            <div class="amenity-item">Power Backup</div>
+            <div class="amenity-item">Modular Kitchen</div>
+            <div class="amenity-item">Balcony with Sea View</div>
+            <div class="amenity-item">Elevator Access</div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="cta-button">Schedule a Visit</a>
+      </div>
+    </div>
+
+    <!-- Property 2: Modern Villa -->
+    <div id="property-2" class="property-detail" style="display:none;">
+      <img src="https://imgs.search.brave.com/TdwfQrPOQbw56Tga6J1FZghuioBrbg-ID5daZVZVOZU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lbGVt/ZW50cy1yZXNpemVk/LmVudmF0b3VzZXJj/b250ZW50LmNvbS9l/bGVtZW50cy12aWRl/by1jb3Zlci1pbWFn/ZXMvY2IzNjhiMmMt/NjYxYS00NTBlLWEz/MDctZWVkZmNhN2Q1/ZGI2L3ZpZGVvX3By/ZXZpZXcvdmlkZW9f/cHJldmlld18wMDAw/LmpwZz93PTUwMCZj/Zl9maXQ9Y292ZXIm/cT04NSZmb3JtYXQ9/YXV0byZzPTRhNGRl/NzQ0NTExZjA0YWY5/M2YzOTZiMGRjMTk3/ZGQ4YjNkYTExNDMz/YWQ5NGNiNGJmYjk0/NmVkM2IxMmU1ZjE" alt="Modern Villa" class="property-image">
+      
+      <div class="property-content">
+        <div class="property-header">
+          <h1 class="property-title">Modern Villa</h1>
+          <p class="property-location">Whitefield, Bangalore</p>
+          <div class="price-tag">₹2.5 Crores</div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🛏️</div>
+            <div class="feature-label">Bedrooms</div>
+            <div class="feature-value">4 BHK</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚿</div>
+            <div class="feature-label">Bathrooms</div>
+            <div class="feature-value">4</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <div class="feature-label">Size</div>
+            <div class="feature-value">3,500 sq ft</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏡</div>
+            <div class="feature-label">Type</div>
+            <div class="feature-value">Independent</div>
+          </div>
+        </div>
+
+        <div class="amenities">
+          <h3>Key Amenities</h3>
+          <div class="amenities-list">
+            <div class="amenity-item">Private Garden</div>
+            <div class="amenity-item">Swimming Pool</div>
+            <div class="amenity-item">Home Theater</div>
+            <div class="amenity-item">4 Car Parking</div>
+            <div class="amenity-item">Solar Power System</div>
+            <div class="amenity-item">Smart Home Automation</div>
+            <div class="amenity-item">Terrace Garden</div>
+            <div class="amenity-item">Servant Quarter</div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="cta-button">Schedule a Visit</a>
+      </div>
+    </div>
+
+    <!-- Property 3: Affordable Flat -->
+    <div id="property-3" class="property-detail" style="display:none;">
+      <img src="https://images.nobroker.in/images/8aa9b71d99146634019914992ae21bd7/8aa9b71d99146634019914992ae21bd7_82723_533012_medium.jpg" alt="Affordable Flat" class="property-image">
+      
+      <div class="property-content">
+        <div class="property-header">
+          <h1 class="property-title">Affordable Flat</h1>
+          <p class="property-location">Kothrud, Pune</p>
+          <div class="price-tag">₹35 Lakhs</div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🛏️</div>
+            <div class="feature-label">Bedrooms</div>
+            <div class="feature-value">1 BHK</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚿</div>
+            <div class="feature-label">Bathrooms</div>
+            <div class="feature-value">1</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <div class="feature-label">Size</div>
+            <div class="feature-value">650 sq ft</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏢</div>
+            <div class="feature-label">Floor</div>
+            <div class="feature-value">5th of 10</div>
+          </div>
+        </div>
+
+        <div class="amenities">
+          <h3>Key Amenities</h3>
+          <div class="amenities-list">
+            <div class="amenity-item">Parking Space</div>
+            <div class="amenity-item">Lift Available</div>
+            <div class="amenity-item">Security Guard</div>
+            <div class="amenity-item">Water Supply</div>
+            <div class="amenity-item">Power Backup</div>
+            <div class="amenity-item">Modular Kitchen</div>
+            <div class="amenity-item">Near Metro Station</div>
+            <div class="amenity-item">Ready to Move</div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="cta-button">Schedule a Visit</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 DreamHomes. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showProperty(num) {
+      
+      document.querySelectorAll('.property-detail').forEach(prop => {
+        prop.style.display = 'none';
+      });
+      
+      document.querySelectorAll('.property-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      
+      document.getElementById('property-' + num).style.display = 'block';
+      
+   
+      event.target.classList.add('active');
+      
+      document.querySelector('.property-detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  </script>
+</body>
+</html>
